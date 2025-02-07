@@ -15,7 +15,7 @@ public class CalculadoraTest {
         ServicioMatematico servicioMock = mock(ServicioMatematico.class);
 
         // 2. Definir el comportamiento del mock
-        when(servicioMock.suma(5, 3)).thenReturn(11);
+        when(servicioMock.suma(5, 3)).thenReturn(10);
 
         // 3. Usar el mock en la clase que queremos probar
         Calculadora calculadora = new Calculadora(servicioMock);
